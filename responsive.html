@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar  web responsove</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+            box-sizing: border-box;
+        }
+      
+        .kumpulan-box{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin-top: 150px;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .box1, .box2, .box3{
+            width: 200px;
+            height: 150px;
+            border: 2px solid black;
+        }
+        .btn{
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-top: 60px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="kumpulan-box">
+
+        <div class="box1" id="box1">
+            <input type="button" value="tombol" class="btn" onclick="UbahBg1()" >
+        </div>
+        <div class="box2" id="box2">
+            <input type="button" value="tombol" class="btn" onclick="UbahBg2()" >
+        </div>
+        <div class="box3" id="box3">
+            <input type="button" value="tombol" class="btn" onclick="UbahBg3()">
+        </div>
+
+    </div>
+
+</body>
+<script>
+    function UbahBg1() {
+        let rubah = document.getElementById("box1");
+        if (rubah.style.backgroundColor === "red") {
+            rubah.style.backgroundColor = ""; 
+        } else {
+            rubah.style.backgroundColor = "red";
+        }
+    }
+
+    function UbahBg2() {
+        let rubah = document.getElementById("box2");
+        if (rubah.style.backgroundColor === "yellow") {
+            rubah.style.backgroundColor = "";
+        } else {
+            rubah.style.backgroundColor = "yellow";
+        }
+    }
+
+    function UbahBg3() {
+        let rubah = document.getElementById("box3");
+        if (rubah.style.backgroundColor === "green") {
+            rubah.style.backgroundColor = "";
+        } else {
+            rubah.style.backgroundColor = "green";
+        }
+    }
+</script>
+
+</html>
